@@ -17,7 +17,7 @@ const Main=()=>{
     },[url_set])
 
     const getData=(movieType)=>{
-        if(movieType=="Popular")
+        if(movieType=="popular")
         {
             url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
         }
@@ -65,7 +65,7 @@ const Main=()=>{
                 </nav>
                 <form>
                     <div className="search-btn">
-                        <input type="text" placeholder="Enter Movie Name" 
+                        <input type="text" placeholder="Enter  Name" 
                         className="inputText" onChange={(e)=>{setSearch(e.target.value)}} 
                         value={search} onKeyPress={searchMovie}>
                         </input>
